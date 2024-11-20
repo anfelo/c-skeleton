@@ -37,7 +37,7 @@
 // INFO: Checks that the memory allocated is not NULL
 #define check_mem(A) check((A), "Out of memory.")
 
-// INFO: The check debug is the same as the check but it performs a debug log 
+// INFO: The check debug is the same as the check but it performs a debug log
 // which can be silenced by the compiler flag
 #define check_debug(A, M, ...) if(!(A)) { debug(M, ##__VA_ARGS__); errno=0; goto error; }
 
